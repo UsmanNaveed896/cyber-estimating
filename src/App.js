@@ -17,7 +17,7 @@ function App() {
       <Services/>
       <Quickcontact/>
       <Ourprojects/>
-      <Teammembers/>
+      {/* <Teammembers/> */}
       <Contactus/>
       <Footer/>
     </div>

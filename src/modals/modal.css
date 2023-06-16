@@ -1,0 +1,48 @@
+/* border-none shadow-lg relative flex flex-col  pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current */
+.modal-main{
+    display:flex;
+    position:fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000d4;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 1500;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    inset: 0;
+    height: 100%;
+}
+.modal-dialog-a{
+position: relative;
+pointer-events: none;
+width: 30rem;
+}
+.modal-content-a{
+    border: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    pointer-events: all;
+    background-color: white;
+    border-radius: 20px;
+    outline: none;
+}
+.close{
+    display: flex;
+    justify-content: end;
+
+}
+.close img {
+    height: 30px;
+    margin-right: 14px;
+}
+.modal-header-abc{
+    border-radius: 10px;
+}
+.oic-icon{
+    font-size: 35px;
+    color: #0554f2;
+}

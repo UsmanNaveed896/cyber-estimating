@@ -1,7 +1,9 @@
 // import '../../assets/css/owl.theme.default.min.css'
 // import '../../assets/css/owl.carousel.min.css'
 import MultiCarousel from "react-multi-carousel";
+import Modal from "../../modals/modal";
 import "react-multi-carousel/lib/styles.css";
+import { useState } from "react";
 export default () => {
     const responsive = {
         superLargeDesktop: {
@@ -22,6 +24,15 @@ export default () => {
             items: 1
         }
     };
+    const[show,setShow]=useState({
+        show:false,
+        div1:false,
+        div2:false,
+        div3:false,
+        div4:false,
+        div5:false,
+        div6:false,
+    })
     return (
         <>
             <div className="it-solution">
@@ -43,83 +54,103 @@ export default () => {
                             >
                                 <div class="item">
                                     <div class="top">
-                                        <i class="flaticon-secure"></i>
+                                    <i class="fa fa-fire-extinguisher" aria-hidden="true"></i>
                                         <h4>Division 21 — Fire Suppression</h4>
                                     </div>
                                     <p>
                                         The Fire Suppression division is rigorous and requires close attention to detail. The systems for extinguishing fires using water
-                                        and suppressing fires are thoroughly inspected, and the materials, quantities, and installation must be precise. At Cyber Estimating,
-                                        we aim to earn your trust by understanding your needs and presenting information
+                                        and suppressing fires are thoroughly <span style={{color:'#5a5454', fontWeight:"600"}}>Continue Reading...</span>
                                     </p>
-                                    <a href="#"><i class="fas fa-plus"></i> Discover Now</a>
+                                    <a style={{cursor:'pointer', color:'#0d6efd'}} onClick={()=>setShow((st)=>({
+                                        ...st,
+                                        show:true,
+                                        div1:true,
+                                    }))}><i class="fas fa-plus"></i> Discover Now</a>
                                 </div>
 
                                 <div class="item">
                                     <div class="top">
-                                        <i class="flaticon-technical-support"></i>
+                                    <i class="fa fa-bath" aria-hidden="true"></i>
                                         <h4>Division 22 — Plumbing</h4>
                                     </div>
-                                    <p>
+                                    <p style={{marginTop: '35px'}}>
                                         When it comes to Plumbing, mistakes can be costly regarding time and customer satisfaction. Division 22 covers everything
-                                        from piping and pumps to fixtures and related equipment, including numerous small components that should be noticed. With Cyber Estimating,
-                                        you can rely on our expert estimators to accurately calculate and present quantities according to your preferences.
+                                        from piping and pumps to fixtures and  <span style={{color:'#5a5454', fontWeight:"600"}}>Continue Reading...</span>
                                     </p>
-                                    <a href="#"><i class="fas fa-plus"></i> Discover Now</a>
+                                    <a style={{cursor:'pointer', color:'#0d6efd'}} onClick={()=>setShow((st)=>({
+                                        ...st,
+                                        show:true,
+                                        div2:true,
+                                    }))}><i class="fas fa-plus"></i> Discover Now</a>
                                 </div>
 
-                                <div class="item">
+                                <div class="item" style={{paddingTop:'45px' , paddingBottom:'45px'}}>
                                     <div class="top">
-                                        <i class="flaticon-laboratory"></i>
+                                    <i class="fa fa-universal-access" aria-hidden="true"></i>
                                         <h4>Division 23 — Heating Ventilating and Air Conditioning (HVAC)</h4>
                                     </div>
                                     <p>
                                         The heating, ventilating, and air conditioning systems in buildings are becoming more complex over time,
-                                        making it difficult to calculate the materials and equipment needed for these systems accurately.
-                                        Division 23, which covers ductwork, HVAC piping, pumps, controls, and other related equipment, can have requirements.
+                                        making it difficult to calculate the materials and equipment <span style={{color:'#5a5454', fontWeight:"600"}}>Continue Reading...</span>
 
                                     </p>
-                                    <a href="#"><i class="fas fa-plus"></i> Discover Now</a>
+                                    <a style={{cursor:'pointer', color:'#0d6efd'}} onClick={()=>setShow((st)=>({
+                                        ...st,
+                                        show:true,
+                                        div3:true,
+                                    }))}><i class="fas fa-plus"></i> Discover Now</a>
                                 </div>
 
                                 <div class="item">
                                     <div class="top">
-                                        <i class="flaticon-seo"></i>
+                                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
                                         <h4>Division 26 — Electrical</h4>
                                     </div>
-                                    <p>
+                                    <p style={{marginTop: '35px'}}>
                                         Efficient electrical contracting often depends on precise measurements.
-                                        Complex cables, ducts, raceways, controls, substations, and switchgear networks make up medium- and low-voltage electrical distribution systems,
-                                        so accurate calculations of material quantities are crucial.
-                                        Cyber Estimating eliminates the guesswork and provides support for this process.
+                                        Complex cables, ducts, raceways, controls, substations, and switchgear networks make up medium <span style={{color:'#5a5454', fontWeight:"600"}}>Continue Reading...</span>
                                     </p>
-                                    <a href="#"><i class="fas fa-plus"></i> Discover Now</a>
+                                    <a style={{cursor:'pointer', color:'#0d6efd'}} onClick={()=>setShow((st)=>({
+                                        ...st,
+                                        show:true,
+                                        div4:true,
+                                    }))}><i class="fas fa-plus"></i> Discover Now</a>
                                 </div>
                                 <div class="item">
                                     <div class="top">
-                                        <i class="flaticon-seo"></i>
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
                                         <h4>Division 27 — Communications</h4>
                                     </div>
-                                    <p>
+                                    <p style={{marginTop: '35px'}}>
                                         Managing the constantly evolving technology and equipment in Division 27 requires a lot of time and effort,
-                                        and doing it correctly is crucial. Additional infrastructure like racks, frames, ducts, and raceways must
-                                        be quantified in the bidding process to support structured cabling and enclosures for data, voice, audio video,
+                                        and doing it correctly is crucial. Additional <br></br><span style={{color:'#5a5454', fontWeight:"600"}}>Continue Reading...</span>
                                     </p>
-                                    <a href="#"><i class="fas fa-plus"></i> Discover Now</a>
+                                    <a style={{cursor:'pointer', color:'#0d6efd'}} onClick={()=>setShow((st)=>({
+                                        ...st,
+                                        show:true,
+                                        div5:true,
+                                    }))}><i class="fas fa-plus"></i> Discover Now</a>
                                 </div>
                                 <div class="item">
                                     <div class="top">
-                                        <i class="flaticon-seo"></i>
+                                    <i class="fa fa-plug" aria-hidden="true"></i>
                                         <h4>Division 28 — Electronic Safety and Security</h4>
                                     </div>
                                     <p>
                                     Regarding Electronic Safety and Security, even a tiny deviation from the specifications can lead to significant complications during inspections.
-                                     This is because access control, video surveillance, security detection systems, alarms, and life safety overlap with many other divisions.
-                                      Our goal is to provide top-notch service to ensure your satisfaction.
+                                     This is because access <br></br><span style={{color:'#5a5454', fontWeight:"600"}}>Continue Reading...</span>
                                     </p>
-                                    <a href="#"><i class="fas fa-plus"></i> Discover Now</a>
+                                    <a style={{cursor:'pointer', color:'#0d6efd'}} onClick={()=>setShow((st)=>({
+                                        ...st,
+                                        show:true,
+                                        div6:true,
+                                    }))}><i class="fas fa-plus"></i> Discover Now</a>
                                 </div>
                             </MultiCarousel>
-
+                            {show?.show && 
+                            <Modal show={show} setShow={setShow}/>
+                            }
+                        
                         </div>
                     </div>
                 </div>
