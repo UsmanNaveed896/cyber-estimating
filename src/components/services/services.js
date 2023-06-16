@@ -103,7 +103,7 @@ export default () => {
 
                                 <div class="item">
                                     <div class="top">
-                                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                                    <i class="fa fa-lightbulb" aria-hidden="true"></i>
                                         <h4>Division 26 — Electrical</h4>
                                     </div>
                                     <p style={{marginTop: '35px'}}>
@@ -118,7 +118,7 @@ export default () => {
                                 </div>
                                 <div class="item">
                                     <div class="top">
-                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
                                         <h4>Division 27 — Communications</h4>
                                     </div>
                                     <p style={{marginTop: '35px'}}>
