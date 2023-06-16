@@ -190,7 +190,7 @@ export default (props) => {
                                         onClick={() => setShow((st) => ({
                                             ...st,
                                             show: false,
-                                            div5: false
+                                            div6: false
                                         }))}
                                     />
                                 </div>
