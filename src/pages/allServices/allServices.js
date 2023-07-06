@@ -15,7 +15,7 @@ export default () => {
     }, [location]);
     return (
         <>
-            <div className="all-services">
+            <div className="all-services pt-4 pb-4">
                 <div className="container  services-detail pt-5">
                     <h1 style={{ textAlign: 'center',fontWeight:'800' }}>Services We Offer</h1>
                     <div class="modal-header-abc  p-4 0 rounded-t-md" ref={divRef} id="div-21">
