@@ -3666,3 +3666,6 @@ nav.navbar.navbar-default .attr-nav form button {
   position: relative;
   top: 3px;
 }
+nav.navbar.navbar-default.navbar-sticky.bootsnav {
+  display: block!important;
+}

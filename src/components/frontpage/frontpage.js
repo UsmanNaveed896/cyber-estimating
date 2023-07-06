@@ -4,12 +4,13 @@ export default () => {
     return (
         <>
             <div className='it-solution'>
-                <div class="banner-area shadow it-banner dark bg-cover text-light" style={{
-                    backgroundImage: "url(" + "../../assets/img/2440x1578.png" + ")",
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
-                }}>
+                <div class="banner-area shadow it-banner bg-cover text-light" 
+               style={{
+                backgroundImage: `url(${require('../../assets/img/abc.jpg')})`,
+                backgroundPosition: 'center',
+                // backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat'
+              }}>
                     <div class="item-box">
                         <div class="item">
 

@@ -1,4 +1,4 @@
-import Img from '../../assets/img/800x800.png'
+import Img from '../../assets/img/deep.jpg'
 export default () => {
     return (
         <>

@@ -1,9 +1,8 @@
 // import '../../assets/css/owl.theme.default.min.css'
 // import '../../assets/css/owl.carousel.min.css'
 import MultiCarousel from "react-multi-carousel";
-import Modal from "../../modals/modal";
 import "react-multi-carousel/lib/styles.css";
-import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 export default () => {
     const responsive = {
         superLargeDesktop: {
@@ -24,15 +23,12 @@ export default () => {
             items: 1
         }
     };
-    const[show,setShow]=useState({
-        show:false,
-        div1:false,
-        div2:false,
-        div3:false,
-        div4:false,
-        div5:false,
-        div6:false,
-    })
+    const navigate = useNavigate();
+
+    const navigateToServices = (divId) => {
+        navigate('/services', { state: { targetDiv: divId } });
+      };
+  
     return (
         <>
             <div className="it-solution">
@@ -61,11 +57,9 @@ export default () => {
                                         The Fire Suppression division is rigorous and requires close attention to detail. The systems for extinguishing fires using water
                                         and suppressing fires are thoroughly <span style={{color:'#5a5454', fontWeight:"600"}}>Continue Reading...</span>
                                     </p>
-                                    <a style={{cursor:'pointer', color:'#0d6efd'}} onClick={()=>setShow((st)=>({
-                                        ...st,
-                                        show:true,
-                                        div1:true,
-                                    }))}><i class="fas fa-plus"></i> Discover Now</a>
+                                    <a  style={{cursor:'pointer', color:'#0d6efd'}}
+                                    onClick={()=>navigateToServices('div-21')}
+                                    ><i class="fas fa-plus"></i> Discover Now</a>
                                 </div>
 
                                 <div class="item">
@@ -77,11 +71,9 @@ export default () => {
                                         When it comes to Plumbing, mistakes can be costly regarding time and customer satisfaction. Division 22 covers everything
                                         from piping and pumps to fixtures and  <span style={{color:'#5a5454', fontWeight:"600"}}>Continue Reading...</span>
                                     </p>
-                                    <a style={{cursor:'pointer', color:'#0d6efd'}} onClick={()=>setShow((st)=>({
-                                        ...st,
-                                        show:true,
-                                        div2:true,
-                                    }))}><i class="fas fa-plus"></i> Discover Now</a>
+                                    <a style={{cursor:'pointer', color:'#0d6efd'}}
+                                     onClick={()=>navigateToServices('div-22')}
+                                    ><i class="fas fa-plus"></i> Discover Now</a>
                                 </div>
 
                                 <div class="item" style={{paddingTop:'45px' , paddingBottom:'45px'}}>
@@ -94,11 +86,9 @@ export default () => {
                                         making it difficult to calculate the materials and equipment <span style={{color:'#5a5454', fontWeight:"600"}}>Continue Reading...</span>
 
                                     </p>
-                                    <a style={{cursor:'pointer', color:'#0d6efd'}} onClick={()=>setShow((st)=>({
-                                        ...st,
-                                        show:true,
-                                        div3:true,
-                                    }))}><i class="fas fa-plus"></i> Discover Now</a>
+                                    <a style={{cursor:'pointer', color:'#0d6efd'}}
+                                     onClick={()=>navigateToServices('div-23')}
+                                    ><i class="fas fa-plus"></i> Discover Now</a>
                                 </div>
 
                                 <div class="item">
@@ -110,11 +100,9 @@ export default () => {
                                         Efficient electrical contracting often depends on precise measurements.
                                         Complex cables, ducts, raceways, controls, substations, and switchgear networks make up medium <span style={{color:'#5a5454', fontWeight:"600"}}>Continue Reading...</span>
                                     </p>
-                                    <a style={{cursor:'pointer', color:'#0d6efd'}} onClick={()=>setShow((st)=>({
-                                        ...st,
-                                        show:true,
-                                        div4:true,
-                                    }))}><i class="fas fa-plus"></i> Discover Now</a>
+                                    <a style={{cursor:'pointer', color:'#0d6efd'}}
+                                     onClick={()=>navigateToServices('div-26')}
+                                    ><i class="fas fa-plus"></i> Discover Now</a>
                                 </div>
                                 <div class="item">
                                     <div class="top">
@@ -125,11 +113,9 @@ export default () => {
                                         Managing the constantly evolving technology and equipment in Division 27 requires a lot of time and effort,
                                         and doing it correctly is crucial. Additional <br></br><span style={{color:'#5a5454', fontWeight:"600"}}>Continue Reading...</span>
                                     </p>
-                                    <a style={{cursor:'pointer', color:'#0d6efd'}} onClick={()=>setShow((st)=>({
-                                        ...st,
-                                        show:true,
-                                        div5:true,
-                                    }))}><i class="fas fa-plus"></i> Discover Now</a>
+                                    <a style={{cursor:'pointer', color:'#0d6efd'}} 
+                                     onClick={()=>navigateToServices('div-27')}
+                                    ><i class="fas fa-plus"></i> Discover Now</a>
                                 </div>
                                 <div class="item">
                                     <div class="top">
@@ -140,16 +126,11 @@ export default () => {
                                     Regarding Electronic Safety and Security, even a tiny deviation from the specifications can lead to significant complications during inspections.
                                      This is because access <br></br><span style={{color:'#5a5454', fontWeight:"600"}}>Continue Reading...</span>
                                     </p>
-                                    <a style={{cursor:'pointer', color:'#0d6efd'}} onClick={()=>setShow((st)=>({
-                                        ...st,
-                                        show:true,
-                                        div6:true,
-                                    }))}><i class="fas fa-plus"></i> Discover Now</a>
+                                    <a style={{cursor:'pointer', color:'#0d6efd'}}
+                                     onClick={()=>navigateToServices('div-28')}
+                                    ><i class="fas fa-plus"></i> Discover Now</a>
                                 </div>
                             </MultiCarousel>
-                            {show?.show && 
-                            <Modal show={show} setShow={setShow}/>
-                            }
                         
                         </div>
                     </div>
