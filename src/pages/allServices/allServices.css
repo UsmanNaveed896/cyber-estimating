@@ -1,10 +1,46 @@
 .modal-header-abc .oic-icon{
-    color: blue;
+    color: white;
     font-size: 64px;
 }
 .all-services{
     background-color: #f5f5f5;
+    padding-bottom: 10rem!important;
 }
 .services-detail{
     background-color: #fff;
+    padding-bottom: 30px;
 }
+.open-close{
+    padding: 40px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #0554f2, #75a8ff);
+    color: white;
+    margin-top: 12px;
+}
+.plois{
+    cursor: pointer;
+}
+.open-close {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease!important;
+  }
+  
+  .open-close.open {
+    max-height: 1000px; /* Adjust this value based on your content height */
+  }
+  .modal-header-abc {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease!important;
+    background: linear-gradient(to bottom, #0554f2, #75a8ff);
+    color: white;
+  }
+  
+  .modal-header-abc.open {
+    max-height: 1000px;
+    transition: max-height 0.5s ease!important; /* Adjust this value based on your content height */
+  }
+ 

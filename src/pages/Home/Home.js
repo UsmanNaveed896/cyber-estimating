@@ -9,7 +9,7 @@ import Footer from "../../components/footer/footer";
 export default () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <Frontpage />
             <Aboutcompany />
             <Services />

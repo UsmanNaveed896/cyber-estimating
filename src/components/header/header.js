@@ -59,14 +59,14 @@ export default () => {
                             <div class="container-full">
 
                                 {/* <!-- Start Atribute Navigation --> */}
-                                <div class="attr-nav">
+                                {/* <div class="attr-nav">
                                     <form action="#">
                                         <input type="text" placeholder="Search" class="form-control" name="text" />
                                         <button type="submit">
                                             <i class="fa fa-search"></i>
                                         </button>
                                     </form>
-                                </div>
+                                </div> */}
                                 {/* <!-- End Atribute Navigation --> */}
 
                                 {/* <!-- Start Header Navigation --> */}
@@ -88,7 +88,7 @@ export default () => {
 
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-toggle op" data-toggle="dropdown" style={{ textDecoration: 'none' }}>Services</a>
+                                            <a class="dropdown-toggle op" data-toggle="dropdown" style={{ textDecoration: 'none',color:'#0554f2' }}>Services</a>
                                             <div class="menu-wrap">
 
                                                 <ul class="drop-menu">
@@ -105,6 +105,12 @@ export default () => {
 
                                             </div>
 
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" style={{ textDecoration: 'none' }}>Division Serviced</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" style={{ textDecoration: 'none' }}>Division Offered</a>
                                         </li>
 
                                         <li className=' mt-2'><button className='get-btn'>Get Estimate</button></li>
