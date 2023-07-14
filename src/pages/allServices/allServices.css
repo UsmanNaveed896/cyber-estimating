@@ -1,4 +1,4 @@
-.modal-header-abc .oic-icon{
+ .oic-icon{
     color: white;
     font-size: 64px;
 }
@@ -8,14 +8,14 @@
 }
 .services-detail{
     background-color: #fff;
-    padding-bottom: 30px;
+    padding-bottom: 130px;
 }
 .open-close{
     padding: 40px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to bottom, #0554f2, #75a8ff);
+    background: linear-gradient(90deg,#0554f2 35%,#9000fe);
     color: white;
     margin-top: 12px;
 }
@@ -35,12 +35,42 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease!important;
-    background: linear-gradient(to bottom, #0554f2, #75a8ff);
+    background: linear-gradient(90deg,#0554f2 35%,#9000fe);
     color: white;
   }
   
-  .modal-header-abc.open {
-    max-height: 1000px;
-    transition: max-height 0.5s ease!important; /* Adjust this value based on your content height */
-  }
- 
+  
+  button.btn.modal-header-abc.rounded-t-md.collapsed {
+    align-items: end;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    padding: 28px 10px;
+}
+button.modal-header-abc.rounded-t-md {
+  width: 100%;
+  padding: 28px 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.para{
+  background: linear-gradient(90deg,#0554f2 35%,#9000fe);
+  color: white;
+  padding: 35px;
+  font-size: 18px;
+}
+/* dsfsdff */
+.card-header {
+  padding: 20px!important;
+  background: linear-gradient(90deg,#0554f2 35%,#9000fe);
+  font-size: 18px;
+  color: white!important;
+  font-weight: 700;
+  cursor: pointer;
+}
+.card-body{
+  padding: 20px!important;
+  background: linear-gradient(90deg,#0554f2 35%,#9000fe);
+  font-size: 18px;
+  color: white!important;
+}

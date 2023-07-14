@@ -16,7 +16,7 @@ export default () => {
             <Quickcontact />
             <Ourprojects />
             <Contactus />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

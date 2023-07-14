@@ -74,7 +74,9 @@ export default () => {
                                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                                         <i class="fa fa-bars"></i>
                                     </button>
-                                    <a class="navbar-brand" href="index.html">
+                                    <a class="navbar-brand"
+                                    onClick={()=>navigate('/')}
+                                    >
                                         <img src={Img1} class="logo" alt="Logo" />
                                     </a>
                                 </div>
@@ -84,17 +86,21 @@ export default () => {
                                 <div class="collapse navbar-collapse" id="navbar-menu">
                                     <ul class="nav usman" data-in="#" data-out="#" style={{ justifyContent: 'center', gap: '30px' }}>
                                         <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" style={{ textDecoration: 'none' }}>Home</a>
+                                            <a style={{ textDecoration: 'none',marginTop:'6px',color:'#0554f2',cursor:'pointer' }}
+                                            onClick={()=>navigate('/')}
+                                            >
+                                                
+                                                Home</a>
 
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-toggle op" data-toggle="dropdown" style={{ textDecoration: 'none',color:'#0554f2' }}>Services</a>
+                                            <a class="dropdown-toggle op" data-toggle="dropdown" style={{ textDecoration: 'none',color:'#0554f2',cursor:'pointer' }}>Services</a>
                                             <div class="menu-wrap">
 
                                                 <ul class="drop-menu">
 
                                                     <li class="drop-menu-item" >
-                                                        <a onClick={()=>navigate('/services')} >Services</a>
+                                                        <a onClick={()=>navigate('/services')} style={{cursor:'pointer'}}>Services</a>
                                                         {/* <a >Division 22 — Plumbing</a>
                                                         <a >Division 23 — Heating Ventilating and Air Conditioning (HVAC)</a>
                                                         <a >Division 26 — Electrical</a>

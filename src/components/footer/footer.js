@@ -2,9 +2,9 @@ import Img from '../../assets/img/6.png'
 export default () => {
     return (
         <>
-            <div className="it-solution">
+            <div className="it-solution ">
                 <footer class="bg-dark text-light">
-                    <div class="container">
+                    <div class="container pb-5">
                         <div class="f-items">
                             <div class="row">
                                 <div class="col-lg-5 col-md-6 item">
@@ -16,14 +16,7 @@ export default () => {
                                             enables us to provide fast and accurate estimates, saving you time, lowering costs,
                                             and enhancing efficiency.<br></br>
                                             Services:<br></br>
-                                            1. Cost Estimates<br></br>
-                                            2. Budgetary Cost Estimates<br></br>
-                                            3. Material Takeoffs<br></br>
-                                            4. Scope Revisions & Comparisons<br></br>
-                                            5. Print & Email Ready Final Estimates<br></br>
-                                            6. Project Scheduling<br></br>
-                                            7. Change Order Management<br></br>
-
+                                            
                                         </p>
                                         <div class="social">
                                             <ul>
@@ -49,19 +42,25 @@ export default () => {
                                         <h4 class="widget-title">Services</h4>
                                         <ul>
                                             <li>
-                                                <a href="#">SEO Marketing</a>
+                                                <a href="#"> Cost Estimates</a>
                                             </li>
                                             <li>
-                                                <a href="#">Pay Per Click</a>
+                                                <a href="#">Budgetary Cost Estimates</a>
                                             </li>
                                             <li>
-                                                <a href="#">SEO Services</a>
+                                                <a href="#">Material Takeoffs</a>
                                             </li>
                                             <li>
-                                                <a href="#">Social Media</a>
+                                                <a href="#">Scope Revisions & Comparisons</a>
                                             </li>
                                             <li>
-                                                <a href="#">SEO Audit</a>
+                                                <a href="#">Print & Email Ready Final Estimates</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Project Scheduling</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Change Order Management</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -96,16 +95,12 @@ export default () => {
                                         <div class="address">
                                             <ul>
                                                 <li>
-                                                    <p>Address</p>
-                                                    <strong>California, TX 70240</strong>
-                                                </li>
-                                                <li>
                                                     <p>Email</p>
-                                                    <strong>support@validtheme.com</strong>
+                                                    <strong>info@cyberestimating.com</strong>
                                                 </li>
                                                 <li>
                                                     <p>Contact</p>
-                                                    <strong>+44-20-7328-4499</strong>
+                                                    <strong>Whatsapp: +1 786-840-5432</strong>
                                                 </li>
                                             </ul>
                                         </div>

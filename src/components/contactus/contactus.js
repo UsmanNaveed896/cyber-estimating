@@ -1,4 +1,5 @@
-import Img from '../../assets/img/illustration/9.png'
+import Img from '../../assets/img/illustration/9.png';
+import Img1 from '../../assets/img/whatsapp.png'
 export default () => {
     return (
         <>
@@ -52,7 +53,7 @@ export default () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div class="row mt-4">
                                                 <div class="col-lg-12">
                                                     <button type="submit" name="submit" id="submit">
                                                         Send Now
@@ -70,7 +71,7 @@ export default () => {
                                 <div class="col-lg-5 left-info">
                                     <div class="info-items">
 
-                                        <div class="item">
+                                        {/* <div class="item">
                                             <div class="icon">
                                                 <i class="flaticon-location"></i>
                                             </div>
@@ -80,7 +81,7 @@ export default () => {
                                                     22 Baker Street, London, <br></br> United Kingdom, W1U 3BW
                                                 </p>
                                             </div>
-                                        </div>
+                                        </div> */}
 
                                         <div class="item">
                                             <div class="icon">
@@ -88,9 +89,11 @@ export default () => {
                                             </div>
                                             <div class="info">
                                                 <h5>Make a Call</h5>
-                                                <p>
-                                                    +1-940-394-2948 <br></br> +1-389-385-3807
-                                                </p>
+                                                <div className='mt-3'>
+                                                <img className='' src={Img1} alt="abc" />
+                                                <span className='icons-whatsapp'>+1 786-840-5432</span>
+                                                </div>
+                                                
                                             </div>
                                         </div>
 
@@ -101,8 +104,7 @@ export default () => {
                                             <div class="info">
                                                 <h5>Send a Mail</h5>
                                                 <p>
-                                                    info@Maxa.com <br></br>
-                                                    support@Maxa.com
+                                                info@cyberestimating.com
                                                 </p>
                                             </div>
                                         </div>

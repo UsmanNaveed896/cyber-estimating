@@ -9,7 +9,7 @@ export default () => {
             <div className='it-solution'>
                 <div class="banner-area shadow it-banner bg-cover text-light"
                     style={{
-                        backgroundImage: `url(${require('../../assets/img/abc.jpg')})`,
+                        backgroundImage: `url(${require('../../assets/img/new.jpg')})`,
                         backgroundPosition: 'center',
                         // backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat'
@@ -29,18 +29,19 @@ export default () => {
                                             <Carousel autoPlay interval="5000" infiniteLoop showIndicators={false} showStatus={false} showArrows={false}>
                                                 <div class="content">
                                                     {/* <img src="assets/1.jpeg" /> */}
-                                                    <h2 class="wow fadeInDown" style={{textAlign:'start'}}>Estimating excellence <br></br> for  your construction needs</h2>
+                                                    <h2 class="wow fadeInDown" style={{textAlign:'start'}}>
+                                                        Unlocking Time, Money,<br></br> and Confidence for Your <br></br>Project's Success</h2>
                                                  
                                                 </div>
                                                 <div class="content">
                                                     {/* <img src="assets/2.jpeg" /> */}
-                                                    <h2 class="wow fadeInDown"  style={{textAlign:'start'}}>Precise estimates, Profitable projects</h2>
+                                                    <h2 class="wow fadeInDown"  style={{textAlign:'start'}}>Empowering Projects with <br></br> Precision, Trust, and Confidences</h2>
                                                   
                                                     {/* <p className="legend"></p> */}
                                                 </div>
                                                 <div class="content">
                                                     {/* <img src={Img2} /> */}
-                                                    <h2 class="wow fadeInDown" style={{textAlign:'start'}}>Expert Estimating <br></br> for Superior Construction</h2>
+                                                    <h2 class="wow fadeInDown" style={{textAlign:'start'}}>Excellence Defined: Accurate,<br></br> Reliable, and Expert Estimating Services.</h2>
                                                 </div>
                                             </Carousel>
                                             {/* <h4 class="wow fadeInUp">Estimating excellence for your construction needs</h4>

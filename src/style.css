@@ -3257,7 +3257,7 @@ footer.bg-dark .footer-bottom p {
 }
 
 .banner-area.it-banner .content h2 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -4883,4 +4883,8 @@ menu, .drop-menu {
 
 .dropdown:hover .drop-menu {
   display: block;
+}
+.icons-whatsapp{
+  padding-top: 3rem!important;
+  padding-left: 10px;
 }
